@@ -10,24 +10,48 @@
     <title>Grading</title>
 </head>
 <body>
+
+    <!-- 
     
 <div class="search-wrapper">
     <label for="search">Search Users</label>
-    <input type="search" id="search" data-search>
-</div>
-      
+    <input type="search" id="search" pattern=".*\S.*" required data-search>
 
-<a href="details.html">
 
-<div class="user-cards" data-user-card-container></div>
 
-<template data-user-template>
-    <div class="card">
-        <div class="header" data-header></div>
-        <div class="body" data-body></div>
+ 
+</div> -->
+
+<div>
+
+    <div class="welcome-div">
+        <img class="welcome-img" src="undraw_welcome_cats_thqn.svg">
+
     </div>
-</template>
-</a>
+
+    <form onsubmit="event.preventDefault();" role="search">
+        <label for="search">Search for stuff</label>
+        <input id="search" type="search" placeholder="Search..." autofocus required />
+        <button type="submit">Go</button>    
+      </form>
+          
+    
+    
+    <a href="details.html">
+    
+    <div class="user-cards" data-user-card-container></div>
+    
+    <template data-user-template>
+        <div class="card">
+            <div class="header" data-header></div>
+            <div class="body" data-body></div>
+        </div>
+    </template>
+    </a>
+
+</div>
+
+
 
 
 </body>
